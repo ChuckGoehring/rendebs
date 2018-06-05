@@ -21,11 +21,11 @@
        (ngSubmit)="onSubmit()" #appointmentForm="ngForm" > 
 
 <div class='edit-outer-container' 
-style='align-items: center; justify-content: center; border-style: dashed; border-color: red; max-width: 100%;'>
+style='align-items: center; justify-content: center; max-width: 100%;'>
 
 
-      <div class='edit-area-container ' style=' border-style: solid; border-color: green; max-width: 1000px;'>
-        <div class='edit-area-left-panel' style='align-items: center; justify-content: center; border-style: solid; border-color: yellow;'>   <!-- flex panel -->
+      <div class='edit-area-container ' style=' border-style: solid; border-color: navy; max-width: 1000px;'>
+        <div class='edit-area-left-panel' style='align-items: center; justify-content: center;'>   <!-- flex panel -->
           <label class='data-group-header'>Basic Info:</label>
 
           <div class="form-group">
@@ -83,7 +83,7 @@ style='align-items: center; justify-content: center; border-style: dashed; borde
 
         </div> 
 
-        <div class='edit-area-right-panel nonCritical' style='border-color: aqua;'>  
+        <div class='edit-area-right-panel nonCritical' style=''>  
           <label class='data-group-header'>Supplimental Info:</label>
 
           <div class="form-group">
@@ -139,10 +139,10 @@ style='align-items: center; justify-content: center; border-style: dashed; borde
 
 
 
-          <div class='edit-area-container ' style='align-items: center; justify-content: center; border-style: solid; border-color: pink;   width: 50%;'>
+          <div class='edit-area-container ' style='align-items: center; justify-content: center;  width: 50%;'>
 
             <div class='edit-area-single-panel' 
-              style='border-style: solid; border-color: tan; max-width: 300px; max-height: 60px;'> 
+              style='max-width: 300px; max-height: 60px;'> 
 
                     <button class='btn btn-outline-primary' (click)="onSubmitSearch()">Search</button>
                     <button class='btn btn-warning' (click)="onSave($event)"  [disabled]="!appointmentForm.valid">Save</button>        
