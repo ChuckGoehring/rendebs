@@ -1,0 +1,134 @@
+@import "./../../variables.scss";
+
+//$outer-border-color: green; // #d7d7d7;
+
+
+.edit-outer-container {
+  display: flex;
+  flex-direction: column;  
+
+}
+
+.edit-area-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+  align-content: flex-start; 
+  width: 100%; 
+  border-radius: 8px;  
+
+  margin-left: auto; 
+  margin-right: auto; 
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 600px) {
+  .edit-area-left-panel, .edit-area-right-panel {
+    height: $bheight;
+    width: 50%;
+    padding: 8px;
+    margin: 8px; 
+    max-width: 600px;
+  }
+
+}
+
+.edit-area-single-panel {
+  height: 120px;
+  width: 100%;
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-content: center; 
+  align-items: center; 
+
+}
+
+
+
+
+
+
+
+div.nonCritical {
+  border-style: solid;
+}
+
+div.optional {
+  border-style: solid;
+}
+
+.edit-area-left-panel {
+  flex: 1;
+  /* border: 1px  red dashed;  */  /* #ccc */
+}
+
+.edit-area-right-panel {
+  flex: 1;
+  /* border: 1px aqua solid;  */
+}
+
+@media only screen and (max-width: 400px) {
+  .edit-area-left-panel, .edit-area-right-panel {
+    height: $bheight;
+    width: 50%;
+    padding: 8px;
+    margin: 8px; 
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justiffy-content: flex-start;
+  }
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 600px) {
+  div.optional {
+    display: none;
+  }
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 500px) {
+  div.nonCritical {
+    display: none;
+  }
+}
+
+/* note the nesting here  */
+input.ng-invalid.ng-touched {
+  border-left: 5px solid red;
+}
+input.ng-valid.ng-touched {
+  border-left: 5px solid green;
+}
+
+/*
+.ng-untouched   {
+  color: green;
+}
+
+.ng-touched {
+  color: yellow;
+}
+
+.ng-dirty  {
+  color: yellow;
+}
+
+.ng-pristine {
+  color: yellow;
+}
+
+.ng-valid  {
+  color: magenta;
+}
+
+.ng-invalid {
+  color: red;
+}
+
+
+*/

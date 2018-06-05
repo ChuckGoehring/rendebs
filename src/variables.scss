@@ -1,0 +1,37 @@
+
+$outer-border-color: red; // #d7d7d7;
+
+$bheight: (700 * 1px); // 
+
+$form-row-height: 12;
+$form-label-height: 12;
+
+$toolbar-height: (38 * 1px); 
+$accent-border-color: #E0F8EC;  /* #0B3B39*/
+$menu-back-color: #81BEF7;
+$menu-item-height:  (38 * 1px); 
+$toolbar-back-color: #81BEF7;
+$searchbox-back-color: white;
+
+$input-border-color: $accent-border-color;
+$heading-underbar-color: $accent-border-color;
+
+
+$content-panel-color: lightgray;
+
+.menu-slot .compound-menu li {
+  margin-top: 0px;
+  margin-bottiom: 0px; 
+  padding-top: 0px;
+  padding-bottiom: 0px;   
+  height: (38 * 1px);
+}
+
+.menu-slot .compound-menu li a {
+  margin-top: 0px;
+  margin-bottiom: 0px; 
+  padding-top: 0px;
+  padding-bottiom: 0px;  
+  height:(38 * 1px);
+}
+
